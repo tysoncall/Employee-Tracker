@@ -60,6 +60,7 @@ class DB {
 
   // Create a new role
   createRole(role) {
+    console.log(role)
     return this.connection.query("INSERT INTO role SET ?", role);
   }
 
